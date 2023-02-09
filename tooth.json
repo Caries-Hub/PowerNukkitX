@@ -1,22 +1,32 @@
 {
     "format_version": 1,
-    "tooth": "<tooth repository path without http:// or https://>",
-    "version": "<version>",
-    "dependencies": {},
+    "tooth": "github.com/Tooth-Hub/PowerNukkitX",
+    "version": "0.0.8",
     "information": {
-        "name": "<name>",
-        "description": "<description>",
-        "author": "<author>",
-        "license": "<license>",
-        "homepage": "<homepage>"
+        "name": "PowerNukkitX",
+        "description": "Make Nukkit Great Again!",
+        "author": "PowerNukkitX",
+        "license": "GPL-3.0",
+        "homepage": "https://github.com/PowerNukkitX/PowerNukkitX"
     },
     "placement": [
         {
-            "source": "<source>",
-            "destination": "<destination>"
+            "source": "linux/amd64/pnx",
+            "destination": "pnx",
+            "GOOS": "linux",
+            "GOARCH": "amd64"
+        },
+        {
+            "source": "linux/arm64/pnx",
+            "destination": "pnx",
+            "GOOS": "linux",
+            "GOARCH": "arm64"
+        },
+        {
+            "source": "windows/amd64/pnx.exe",
+            "destination": "pnx.exe",
+            "GOOS": "windows",
+            "GOARCH": "amd64"
         }
-    ],
-    "possession": [
-        "<possession>"
     ]
 }
